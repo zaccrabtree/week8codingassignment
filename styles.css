@@ -1,0 +1,100 @@
+/* This was to give my pages a neutral background and change up the font to 
+something distinctive but still legible.*/
+body {
+    background-color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/*Here I have styled various elements.*/
+h1, h2 {
+    color: red;
+}
+
+h3 {
+    color: black;
+}
+
+div {
+    padding: 10px;
+    border: solid;
+    border-radius: 5px;
+    border-color: green
+}
+
+img {
+    float: right;
+    border: solid;
+    border-color: black;
+}
+
+.comp-img {
+    float: top;
+}
+
+a:hover {
+    color: rgb(15, 230, 26);
+}
+
+a {
+    color: green;
+}
+/* Here I styled my links with a default color and a hover color. */
+a:link {
+  color: green;
+}
+
+a:hover{
+    color: red;
+}
+/*Here I styled my table and I added a hover that highlighted the entire row.*/
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: coral;
+}
+/* I decided to do something a little animated for the "SIGN-UP!" text above my form with pure CSS*/
+.waviy {
+    position: relative;
+    text-align: center;
+  }
+
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: rgb(236, 9, 9);
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+/*Here I just wanted to demonstrate that I knew also how to style something using the element identifier.*/
+#special {
+    font-size: x-large;
+    color: rgb(236, 9, 9);
+}
+/*Who knew that my research assignment would directly impact my code for this week?? I employed "clearfix" pseudo-class
+in order to make sure that my images fit into their appropriate divs.*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ol, ul {
+    align-items: flex-start;
+    list-style-position: inside;
+    }
+
+
+
+
+
+
